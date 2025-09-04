@@ -5,17 +5,7 @@
 #define DEFAULT 0
 
 / {
-    behaviors {
-        lt: layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            #binding-cells = <2>;
-            bindings = <&mo>, <&kp>;
-        };
-    };
+    
 
     keymap {
         compatible = "zmk,keymap";
