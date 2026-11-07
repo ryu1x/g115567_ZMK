@@ -1,0 +1,4 @@
+# Zephyr selects a shield's Kconfig through this symbol; without it the shield's own options
+# never become visible to the build.
+config SHIELD_ORTHO_ALPS
+    def_bool $(shields_list_contains,ortho_alps)
